@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ Expertise | N.C.R Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 40px; }
+        .faq-card { 
+            background: white; 
+            border: 1px solid var(--border); 
+            border-radius: 24px; 
+            padding: 35px; 
+            text-align: left;
+            transition: 0.3s;
+        }
+        .faq-card:hover { border-color: var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .faq-card h4 { 
+            color: var(--text-main); 
+            font-size: 1.2rem; 
+            margin-top: 0; 
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .faq-card h4::before {
+            content: "Q.";
+            color: var(--accent);
+            margin-right: 12px;
+            font-weight: 900;
+        }
+        .faq-card p { color: var(--text-dim); margin-bottom: 0; line-height: 1.7; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Logo N.C.R" class="logo-img">
+            <div class="logo-text">N.C.R<span> SOLUTIONS</span></div>
+        </a>
+        <nav>
+            <a href="formations.html">Formations</a>
+            <a href="a-propos.html">À Propos</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container" style="max-width: 900px; text-align: center;">
+        <div class="badge">Aide & Expertise</div>
+        <h1 style="font-size: 3.5rem; font-weight: 900; letter-spacing: -2px; margin-top: 10px;">Vos questions sur l'apport N.C.R</h1>
+        <p style="color: var(--text-dim); font-size: 1.2rem;">Tout savoir sur comment nos parcours transforment votre quotidien professionnel.</p>
+
+        <div class="faq-grid">
+            
+            <div class="faq-card">
+                <h4>Je ne suis pas "tech", vais-je réussir à suivre ?</h4>
+                <p>Absolument. Nos formations sur les outils numériques sont conçues pour être accessibles. Nous vulgarisons chaque concept et nous concentrons sur l'usage pratique : comment l'outil vous aide, plutôt que comment il fonctionne techniquement.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Quel est l'impact immédiat sur mon temps de travail ?</h4>
+                <p>L'objectif de la méthode N.C.R est de vous faire gagner entre 2 et 5 heures par semaine. En automatisant vos tâches répétitives et en maîtrisant mieux vos canaux de communication (Slack, Mails), vous éliminez les "voleurs de temps".</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>En quoi la formation "Litiges" aide-t-elle le chiffre d'affaires ?</h4>
+                <p>Un client mécontent bien géré a 70% de chances de devenir un client fidèle à vie. Nous vous apprenons à transformer une crise coûteuse en une opportunité de fidélisation, ce qui réduit vos coûts d'acquisition client.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Peut-on adapter le contenu à mon secteur d'activité ?</h4>
+                <p>C'est notre force. Avant chaque session, nous effectuons un diagnostic. Que vous soyez dans le commerce de détail, l'immobilier ou les services, les mises en situation sont personnalisées selon vos problématiques métiers.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Quelle est la différence avec une formation en ligne classique ?</h4>
+                <p>L'interaction. Là où une vidéo pré-enregistrée vous laisse seul face à vos doutes, N.C.R propose des échanges en direct, du coaching en temps réel et un suivi à 30 jours pour s'assurer que vous n'avez pas abandonné vos bonnes habitudes.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Comment gérez-vous les groupes avec des niveaux hétérogènes ?</h4>
+                <p>Nous travaillons par petits groupes ou en binômes de compétences. Cela permet de créer une dynamique d'entraide où les plus avancés consolident leurs acquis en aidant les autres, tout en avançant sur des exercices modulables.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Est-ce que j'aurai des supports après la formation ?</h4>
+                <p>Oui. Chaque participant repart avec des fiches mémo "Quick Start" et un guide des bonnes pratiques pour pouvoir retrouver les raccourcis et méthodes clés en un coup d'œil sur son bureau.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Pourquoi mettre l'accent sur l'image professionnelle (E-réputation) ?</h4>
+                <p>En 2026, votre première poignée de main est digitale. Une mauvaise communication sur LinkedIn ou une visio mal maîtrisée peut briser une vente avant même qu'elle ne commence. Nous sécurisons votre crédibilité.</p>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 60px; padding: 50px; background: #1d1d1f; color: white; border-radius: 30px;">
+            <h3>Une question spécifique à votre métier ?</h3>
+            <p style="color: #a1a1a6; margin-bottom: 25px;">Nacer vous répond directement pour analyser vos besoins.</p>
+            <a href="contact.html" class="btn" style="background: white; color: black;">Contacter l'expert</a>
+        </div>
+    </div>
+
+    <footer>
+        <img src="logo.png" alt="Logo N.C.R" style="height: 60px; margin-bottom: 20px;">
+        <p>© 2026 N.C.R Solutions</p>
+    </footer>
+</body>
+</html>
