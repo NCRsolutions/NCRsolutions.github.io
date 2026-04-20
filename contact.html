@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | N.C.R Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo-container">
+        <img src="logo.png" alt="Logo N.C.R" class="logo-img">
+        <div class="logo-text">N.C.R<span> SOLUTIONS</span></div>
+    </a>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+    </nav>
+</header>
+
+<div class="container" style="max-width: 800px; margin: auto;">
+
+    <div style="text-align: center;">
+        <h1 style="font-weight: 900;">Parlons de votre projet.</h1>
+        <p style="color: var(--text-dim); margin-top: 15px; font-size: 1.1rem;">
+            Décrivez votre besoin et recevez une réponse claire, rapide et adaptée à votre réalité terrain.
+        </p>
+    </div>
+
+    <!-- FORMULAIRE -->
+    <form action="mailto:ncr-solutions@outlook.fr" method="post" enctype="text/plain"
+    style="background: white; border: 1px solid var(--border); border-radius: 30px; padding: 40px; margin-top: 40px;">
+
+        <!-- Nom -->
+        <label style="font-weight: 600;">Nom / Entreprise</label><br>
+        <input type="text" name="nom" required 
+        style="width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border-radius: 10px; border: 1px solid #ccc;">
+
+        <!-- Email -->
+        <label style="font-weight: 600;">Email</label><br>
+        <input type="email" name="email" required 
+        style="width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border-radius: 10px; border: 1px solid #ccc;">
+
+        <!-- Téléphone -->
+        <label style="font-weight: 600;">Téléphone (optionnel)</label><br>
+        <input type="text" name="telephone" 
+        style="width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border-radius: 10px; border: 1px solid #ccc;">
+
+        <!-- Besoin -->
+        <label style="font-weight: 600;">Votre besoin</label><br>
+        <select name="besoin" 
+        style="width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border-radius: 10px; border: 1px solid #ccc;">
+            <option>Formation communication</option>
+            <option>Outils numériques</option>
+            <option>Gestion des litiges</option>
+            <option>Autre</option>
+        </select>
+
+        <!-- Message -->
+        <label style="font-weight: 600;">Votre message</label><br>
+        <textarea name="message" rows="5" required
+        style="width: 100%; padding: 12px; margin-top: 8px; border-radius: 10px; border: 1px solid #ccc;"></textarea>
+
+        <!-- Consentement -->
+        <p style="font-size: 0.8rem; color: #666; margin-top: 15px;">
+            En soumettant ce formulaire, vous acceptez que vos données soient utilisées pour vous recontacter.
+        </p>
+
+        <!-- Bouton -->
+        <div style="text-align: center; margin-top: 25px;">
+            <button type="submit" class="btn">
+                Envoyer ma demande
+            </button>
+        </div>
+
+    </form>
+
+    <!-- CONTACT DIRECT -->
+    <div style="text-align: center; margin-top: 40px;">
+        <p style="font-weight: 600;">Ou contactez directement :</p>
+        <a href="mailto:ncr-solutions@outlook.fr" style="font-weight: 800; color: var(--accent); text-decoration: none;">
+            ncr-solutions@outlook.fr
+        </a>
+    </div>
+
+    <!-- INFOS -->
+    <div style="text-align: center; margin-top: 30px; color: #666;">
+        <p>
+            📍 191 impasse Missiri, 83600 Fréjus<br>
+            📞 06 21 97 21 39<br>
+            ⏱ Réponse sous 24h
+        </p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="margin-top: 80px; padding: 50px 20px; border-top: 1px solid #eee; text-align: center;">
+
+    <img src="logo.png" style="height: 70px; margin-bottom: 20px;">
+
+    <p style="font-weight: 600;">N.C.R Solutions</p>
+    <p style="color: #666;">La formation qui va droit au but.</p>
+
+    <p style="margin-top: 15px;">
+        📧 ncr-solutions@outlook.fr<br>
+        📞 06 21 97 21 39
+    </p>
+
+    <div style="margin-top: 15px;">
+        <a href="mentions-legales.html">Mentions légales</a> |
+        <a href="confidentialite.html">Confidentialité</a> |
+        <a href="cgu.html">CGU</a> |
+        <a href="cgv.html">CGV</a>
+    </div>
+
+</footer>
+
+</body>
+</html>
