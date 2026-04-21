@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Impact | N.C.R Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <style>
+        @keyframes cinematicReveal {
+            0% { opacity: 0; filter: blur(15px); transform: scale(0.97) translateY(30px); }
+            100% { opacity: 1; filter: blur(0); transform: scale(1) translateY(0); }
+        }
+
+        body {
+            background-color: #fbfbfd;
+            opacity: 0;
+            animation: cinematicReveal 1.2s cubic-bezier(0.15, 0, 0.15, 1) forwards;
+        }
+
+        .hero-impact {
+            text-align: center;
+            padding: 100px 20px 60px;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item { text-align: center; padding: 20px; }
+        .stat-number { display: block; font-size: 2.5rem; font-weight: 900; color: #0066cc; letter-spacing: -1px; }
+        .stat-label { font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            border: 1px solid #eee;
+        }
+
+        .case-section {
+            background: #000;
+            color: white;
+            padding: 100px 20px;
+            border-radius: 60px;
+            margin: 0 20px 80px;
+        }
+
+        .case-card {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            background: #1d1d1f;
+            padding: 40px;
+            border-radius: 30px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Logo N.C.R" class="logo-img">
+            <div class="logo-text">N.C.R<span> SOLUTIONS</span></div>
+        </a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="formations.html">Formations</a>
+            <a href="impact.html">Impact</a>
+            <a href="a-propos.html">À Propos</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-impact">
+        <div class="badge">Résultats & Preuves</div>
+        <h1 style="font-size: 4rem; font-weight: 900; letter-spacing: -3px; line-height: 1.1;">L'impact, pas le blabla.</h1>
+        
+        <div class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Satisfaction</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">+250</span>
+                <span class="stat-label">Professionnels formés</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Ancrage Terrain</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <p style="font-size: 1.1rem; line-height: 1.6; font-style: italic; margin-bottom: 20px;">"Enfin une formation qui parle notre langage. On est repartis avec des réflexes utilisables immédiatement."</p>
+            <strong>Jean-Philippe R.</strong><br><span style="color: #888; font-size: 0.9rem;">Gérant BTP</span>
+        </div>
+        <div class="testimonial-card">
+            <p style="font-size: 1.1rem; line-height: 1.6; font-style: italic; margin-bottom: 20px;">"Le sur-mesure a fait toute la différence. Le programme s'est calqué sur nos outils internes."</p>
+            <strong>Marie-Laure B.</strong><br><span style="color: #888; font-size: 0.9rem;">Responsable Accueil</span>
+        </div>
+        <div class="testimonial-card">
+            <p style="font-size: 1.1rem; line-height: 1.6; font-style: italic; margin-bottom: 20px;">"Approche très pédagogique. Même les plus réfractaires au numérique ont adopté les nouveaux outils."</p>
+            <strong>Thomas K.</strong><br><span style="color: #888; font-size: 0.9rem;">Agent Immobilier</span>
+        </div>
+    </div>
+
+    <section class="case-section">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 2.5rem;">Analyses de cas</h2>
+        </div>
+
+        <div class="case-card">
+            <h3 style="color: #0066cc; margin-bottom: 15px;">#01 Optimisation Numérique</h3>
+            <p style="color: #ccc;">Transformation d'une gestion papier en flux digital complet pour une TPE. Gain de 6h de gestion administrative par semaine.</p>
+        </div>
+
+        <div class="case-card">
+            <h3 style="color: #0066cc; margin-bottom: 15px;">#02 Gestion de Crise</h3>
+            <p style="color: #ccc;">Formation aux techniques de désamorçage verbal en accueil public. Baisse de 60% des incidents signalés.</p>
+        </div>
+    </section>
+
+    <footer style="margin-top: 80px; padding: 50px 20px; border-top: 1px solid #eee; font-size: 0.95rem; text-align: center;">
+        <img src="logo.png" alt="Logo" style="height: 60px; margin-bottom: 20px;">
+        <p>© 2026 N.C.R Solutions – Tous droits réservés</p>
+    </footer>
+</body>
+</html>
