@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Indique le chemin du sitemap à Google
-Sitemap: https://votre-site.fr/sitemap.xml
