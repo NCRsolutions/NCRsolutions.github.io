@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>N.C.R Solutions | Boostez votre Efficacité Professionnelle</title>
+    <meta name="description" content="Découvrez nos parcours de formation sur-mesure pour optimiser vos processus, maîtriser les outils numériques et perfectionner votre relation client.">
+    
+    <link rel="canonical" href="https://www.ncr-solutions.fr/index.html">
+
+    <meta property="og:title" content="N.C.R Solutions | Formations Professionnelles">
+    <meta property="og:description" content="La formation qui va droit au but. Outils numériques, communication et gestion de crise pour les professionnels.">
+    <meta property="og:image" content="https://www.ncr-solutions.fr/favicon.png">
+    <meta property="og:url" content="https://www.ncr-solutions.fr/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="N.C.R Solutions">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* —————————————————————————————————————————————————————————————
+           DESIGN ULTRA-PREMIUM & CINÉMATIQUE
+           ————————————————————————————————————————————————————————————— */
+        
+        /* Variables globales pour le design premium */
+        :root {
+            --premium-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+            --premium-radius: 32px;
+            --premium-transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Redéfinition de la typographie globale */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #fbfbfd; /* Blanc très légèrement cassé style Apple */
+            color: #1d1d1f;
+        }
+
+        /* Animations d'apparition */
+        @keyframes luxuryFade {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes luxuryLogoReveal {
+            0% { opacity: 0; filter: blur(12px); transform: scale(0.96); }
+            100% { opacity: 1; filter: blur(0); transform: scale(1); }
+        }
+
+        @keyframes luxuryLanding {
+            0% { opacity: 0; transform: translateY(40px); filter: blur(4px); }
+            100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+
+        /* HEADER PREMIUM : Sticky & Glassmorphism */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            animation: luxuryFade 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            padding: 15px 40px; /* Un peu plus d'espace */
+        }
+
+        header .logo-img {
+            opacity: 0;
+            animation: luxuryLogoReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            will-change: filter, opacity, transform;
+        }
+
+        /* Contenu principal */
+        main {
+            opacity: 0;
+            animation: luxuryLanding 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.2s;
+            will-change: transform, opacity, filter;
+        }
+
+        footer {
+            opacity: 0;
+            animation: luxuryLanding 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.4s;
+            will-change: transform, opacity, filter;
+        }
+
+        /* Composants Premium intégrés */
+        .premium-btn {
+            display: inline-block;
+            background: #1d1d1f;
+            color: white;
+            padding: 16px 36px;
+            border-radius: 50px; /* Forme de pilule */
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--premium-transition);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .premium-btn:hover {
+            transform: scale(1.03);
+            background: #000000;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .premium-card {
+            background: white;
+            border: none; /* On supprime les bordures dures */
+            border-radius: var(--premium-radius);
+            padding: 45px 35px;
+            box-shadow: var(--premium-shadow);
+            transition: var(--premium-transition);
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-12px) scale(1.01);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Détection Mode Sombre */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --text-main: #f5f5f7;
+                --text-dim: #a1a1a6;
+                --premium-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            }
+            
+            body { background-color: var(--bg) !important; color: var(--text-main) !important; }
+            p, span.text-dim { color: var(--text-dim) !important; }
+            
+            /* Glassmorphism sombre */
+            header {
+                background: rgba(28, 28, 30, 0.75);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .premium-card {
+                background: #1c1c1e;
+                box-shadow: var(--premium-shadow);
+            }
+
+            .premium-btn {
+                background: #f5f5f7;
+                color: #000000;
+            }
+            
+            .premium-btn:hover {
+                background: #ffffff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Logo N.C.R" class="logo-img">
+            <div class="logo-text">N.C.R<span> SOLUTIONS</span></div>
+        </a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="formations.html">Formations</a>
+            <a href="impact.html">Impact</a>
+            <a href="a-propos.html">À Propos</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main style="flex: 1;">
+
+        <section class="container" style="text-align: center; padding-top: 60px; padding-bottom: 60px;">
+            <img src="logo.png" alt="Logo"
+            style="height: 220px; margin-bottom: 40px; display: block; margin-left: auto; margin-right: auto; transition: var(--premium-transition);"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'">
+
+            <div class="badge" style="margin-bottom: 25px;">Innovation & Formation</div>
+
+            <h1 style="font-size: clamp(3rem, 8vw, 5.5rem); font-weight: 900; letter-spacing: -3.5px; line-height: 1.05; margin-bottom: 20px;">
+                L'excellence terrain.<br>Simplement.
+            </h1>
+
+            <p class="text-dim" style="max-width: 650px; margin: 0 auto 45px; font-size: 1.35rem; line-height: 1.5; font-weight: 300;">
+                Des parcours pragmatiques pour transformer vos compétences numériques et relationnelles.
+            </p>
+
+            <a href="formations.html" class="premium-btn">Découvrir le catalogue</a>
+        </section>
+
+        <section class="container" style="margin-bottom: 80px; padding-top: 40px;">
+
+            <div style="text-align: center; margin-bottom: 60px;">
+                <div class="badge" style="margin-bottom: 20px;">Notre ADN</div>
+                <h2 style="font-size: 3rem; font-weight: 900; letter-spacing: -1.5px;">La Méthode N.C.R</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: left;">
+
+                <div class="premium-card">
+                    <h3 style="color: var(--accent, #2997ff); font-size: 3.5rem; font-weight: 900; margin: 0 0 15px 0; line-height: 1;">01</h3>
+                    <h4 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 15px;">Diagnostic</h4>
+                    <p class="text-dim" style="line-height: 1.7; font-size: 1.05rem; margin: 0;">
+                        Analyse précise de vos besoins, de votre niveau et de vos enjeux terrain. L’objectif est de comprendre vos problématiques réelles afin de construire un parcours sur-mesure.
+                    </p>
+                </div>
+
+                <div class="premium-card">
+                    <h3 style="color: var(--accent, #2997ff); font-size: 3.5rem; font-weight: 900; margin: 0 0 15px 0; line-height: 1;">02</h3>
+                    <h4 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 15px;">Immersion</h4>
+                    <p class="text-dim" style="line-height: 1.7; font-size: 1.05rem; margin: 0;">
+                        Mise en situation concrète et exercices pratiques inspirés de situations professionnelles réelles. Les participants travaillent directement sur leurs cas quotidiens.
+                    </p>
+                </div>
+
+                <div class="premium-card">
+                    <h3 style="color: var(--accent, #2997ff); font-size: 3.5rem; font-weight: 900; margin: 0 0 15px 0; line-height: 1;">03</h3>
+                    <h4 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 15px;">Impact</h4>
+                    <p class="text-dim" style="line-height: 1.7; font-size: 1.05rem; margin: 0;">
+                        Suivi post-formation et accompagnement dans la mise en application des acquis. L’objectif est de garantir des résultats visibles et durables dans votre structure.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container" style="margin-bottom: 80px; text-align: center;">
+            <div class="badge" style="margin-bottom: 20px;">Ils nous font confiance</div>
+            <h2 style="font-size: 3rem; font-weight: 900; letter-spacing: -1.5px; margin-bottom: 50px;">L'impact sur le terrain</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                
+                <div class="premium-card" style="text-align: left; padding: 20px;">
+                    <p class="text-dim" style="font-style: italic; line-height: 1.7; font-size: 1.1rem; margin-bottom: 25px;">
+                        "Nacer comprend les galères du quotidien. On est repartis avec des outils qu'on a utilisés dès le lendemain."
+                    </p>
+                    <div>
+                        <strong style="display: block; font-size: 1.1rem; font-weight: 600;">Marc D.</strong>
+                        <span style="font-size: 0.9rem; color: #888;">Responsable Logistique</span>
+                    </div>
+                </div>
+
+                <div class="premium-card" style="text-align: left; padding: 20px;">
+                    <p class="text-dim" style="font-style: italic; line-height: 1.7; font-size: 1.1rem; margin-bottom: 25px;">
+                        "Le sur-mesure n'est pas qu'un mot ici. Le programme a été adapté à notre logiciel interne. Un gain de temps immense."
+                    </p>
+                    <div>
+                        <strong style="display: block; font-size: 1.1rem; font-weight: 600;">Sarah L.</strong>
+                        <span style="font-size: 0.9rem; color: #888;">Directrice d'agence immobilière</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="impact.html" style="color: var(--accent, #2997ff); font-weight: 600; text-decoration: none; font-size: 1.15rem; transition: var(--premium-transition);" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                Découvrir tous les cas concrets →
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+  <div class="footer-bg"></div>
+
+  <div class="footer-wrapper">
+
+    <div class="footer-brand">
+      <h2 style="font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: -1px;">N.C.R Solutions</h2>
+      <p>
+        Formations professionnelles & solutions digitales pour entreprises modernes.
+        Nous aidons les structures à monter en compétence et en performance.
+      </p>
+
+      <div class="footer-pill">
+        Training partner • France
+      </div>
+    </div>
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Formations</h4>
+        <a href="formation1.html">Communication digitale</a>
+        <a href="formation2.html">Outils numériques</a>
+        <a href="formation3.html">Gestion des litiges</a>
+        <a href="formation-reseaux.html">Réseaux sociaux</a>
+        <a href="accompagnement-ponctuel.html">Accompagnement</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="cgu.html">CGU</a>
+        <a href="cgv.html">CGV</a>
+     </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 N.C.R Solutions — Tous droits réservés.</span>
+    <div class="contact-bar">
+
+  <a href="https://www.linkedin.com/in/nacer-hamadi-7b6476375"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="contact-item">
+
+    <svg viewBox="0 0 24 24" class="icon">
+      <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM8 7h4.8v2.3h.1c.7-1.3 2.5-2.7 5.1-2.7C23 6.6 24 9 24 12.6V24h-5v-9.8c0-2.3 0-5.2-3.2-5.2s-3.7 2.5-3.7 5V24H8V7z"/>
+    </svg>
+
+  </a>
+
+  <a href="tel:+33621972139" class="contact-item">
+
+    <svg viewBox="0 0 24 24" class="icon">
+      <path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/>
+    </svg>
+
+  </a>
+
+  <a href="contact.html" class="contact-item">
+
+    <svg viewBox="0 0 24 24" class="icon">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+
+  </a>
+
+</div>
+    <span class="footer-meta">Designed with precision & simplicity</span>
+  </div>
+
+</footer>
+</body>
+</html>
