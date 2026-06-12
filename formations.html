@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Découvrez nos parcours de formation sur-mesure : efficacité digitale, relation client et image professionnelle. Des solutions concrètes pour chaque métier.">
+
+    <link rel="canonical" href="https://www.ncr-solutions.fr/formations.html">
+
+    <meta property="og:title" content="Nos Formations | N.C.R Solutions">
+    <meta property="og:description" content="Découvrez nos parcours conçus pour un impact immédiat sur votre productivité et votre e-réputation.">
+    <meta property="og:image" content="https://www.ncr-solutions.fr/favicon.png">
+    <meta property="og:url" content="https://www.ncr-solutions.fr/formations.html">
+    <meta property="og:type" content="website">
+
+    <title>Nos Formations | N.C.R Solutions</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    
+    <style>
+        /* —————————————————————————————————————————————————————————————
+           DESIGN ULTRA-PREMIUM & CINÉMATIQUE (Synchronisé avec Accueil)
+           ————————————————————————————————————————————————————————————— */
+        
+        :root {
+            --premium-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+            --premium-radius: 32px;
+            --premium-transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #fbfbfd;
+            color: #1d1d1f;
+        }
+
+        /* Animations d'apparition */
+        @keyframes luxuryFade {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes luxuryLogoReveal {
+            0% { opacity: 0; filter: blur(12px); transform: scale(0.96); }
+            100% { opacity: 1; filter: blur(0); transform: scale(1); }
+        }
+
+        @keyframes luxuryLanding {
+            0% { opacity: 0; transform: translateY(40px); filter: blur(4px); }
+            100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+
+        /* HEADER PREMIUM : Sticky & Glassmorphism */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            animation: luxuryFade 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            padding: 15px 40px;
+        }
+
+        header .logo-img {
+            opacity: 0;
+            animation: luxuryLogoReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            will-change: filter, opacity, transform;
+        }
+
+        /* Contenu principal */
+        main {
+            opacity: 0;
+            animation: luxuryLanding 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.2s;
+            will-change: transform, opacity, filter;
+        }
+
+        footer {
+            opacity: 0;
+            animation: luxuryLanding 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.4s;
+            will-change: transform, opacity, filter;
+        }
+
+        /* Cartes Premium du Catalogue */
+        .premium-card {
+            background: white;
+            border: none;
+            border-radius: var(--premium-radius);
+            padding: 40px 35px;
+            box-shadow: var(--premium-shadow);
+            transition: var(--premium-transition);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-12px) scale(1.01);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Grille adaptative pour les cartes */
+        .premium-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+        }
+
+        /* Détection Mode Sombre */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --text-main: #f5f5f7;
+                --text-dim: #a1a1a6;
+                --premium-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+                --border: #424245;
+                --accent: #2997ff;
+            }
+            
+            body { background-color: var(--bg) !important; color: var(--text-main) !important; }
+            p, span.text-dim { color: var(--text-dim) !important; }
+            
+            header {
+                background: rgba(28, 28, 30, 0.75);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .premium-card {
+                background: #1c1c1e;
+                box-shadow: var(--premium-shadow);
+            }
+            
+            header, footer, .badge-adn, .badge-innovation, .badge {
+                border-color: var(--border) !important;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Course",
+        "name": "Formation Intra-entreprise : Outils Numériques",
+        "description": "Formation pratique sur site à la maîtrise des outils digitaux professionnels et à la transition numérique.",
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "N.C.R Solutions",
+          "sameAs": "https://www.ncr-solutions.fr"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Course",
+        "name": "Formation Intra-entreprise : Gestion des Litiges",
+        "description": "Parcours de formation sur la gestion des conflits, la communication interpersonnelle et la fidélisation client.",
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "N.C.R Solutions"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Course",
+        "name": "Formation Initiale SST (Sauveteur Secouriste du Travail)",
+        "description": "Formation certifiante INRS (14 heures) à la prévention des risques professionnels et aux gestes de premiers secours.",
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "N.C.R Solutions"
+        }
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Logo N.C.R" class="logo-img">
+            <div class="logo-text">N.C.R<span> SOLUTIONS</span></div>
+        </a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="formations.html">Formations</a>
+            <a href="impact.html">Impact</a>
+            <a href="a-propos.html">À Propos</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main style="flex: 1;">
+        <div class="container" style="padding-top: 60px; padding-bottom: 100px;">
+            <h1 style="font-size: clamp(3rem, 8vw, 4.5rem); font-weight: 900; letter-spacing: -2.5px; text-align: center; margin-bottom: 60px; line-height: 1.1;">
+                Catalogue de Formations
+            </h1>
+            
+            <div class="premium-grid">
+                
+                <a href="creation-site-internet.html" class="premium-card">
+    <div>
+        <div class="badge" style="margin-bottom: 20px; display: inline-block;">Sur mesure</div>
+        <h3 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.5px;">Création de Site Internet</h3>
+        <p class="text-dim" style="font-size: 1.1rem; line-height: 1.6; margin: 0; font-weight: 300;">
+            Offrez à votre entreprise un site moderne, performant et optimisé pour convertir vos visiteurs en clients.
+        </p>
+    </div>
+    <div style="margin-top: 35px; font-weight: 800; color: var(--accent, #2997ff); font-size: 1.25rem;">
+        à partir de 790€ HT →
+    </div>
+               </a>
+
+               <a href="community-management.html" class="premium-card">
+    <div>
+        <div class="badge" style="margin-bottom: 20px; display: inline-block;">Accompagnement</div>
+        <h3 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.5px;">Community Management</h3>
+        <p class="text-dim" style="font-size: 1.1rem; line-height: 1.6; margin: 0; font-weight: 300;">
+            Développez votre notoriété grâce à une gestion professionnelle de vos réseaux sociaux et une stratégie de contenu adaptée.
+        </p>
+    </div>
+    <div style="margin-top: 35px; font-weight: 800; color: var(--accent, #2997ff); font-size: 1.25rem;">
+        Forfait mensuel à partir de 249€ HT →
+    </div>
+                </a>
+
+                <a href="assistance-informatique.html" class="premium-card">
+    <div>
+        <div class="badge" style="margin-bottom: 20px; display: inline-block;">Intervention rapide</div>
+        <h3 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.5px;">Assistance Informatique</h3>
+        <p class="text-dim" style="font-size: 1.1rem; line-height: 1.6; margin: 0; font-weight: 300;">
+            Dépannage, maintenance et accompagnement informatique pour particuliers et professionnels.
+        </p>
+    </div>
+    <div style="margin-top: 35px; font-weight: 800; color: var(--accent, #2997ff); font-size: 1.25rem;">
+        interventions à partir de 49€ HT →
+    </div>
+                </a>
+
+                <a href="formation1.html" class="premium-card">
+                    <div>
+                        <div class="badge" style="margin-bottom: 20px; display: inline-block;">1 Jour</div>
+                        <h3 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.5px;">Communication Digitale</h3>
+                        <p class="text-dim" style="font-size: 1.1rem; line-height: 1.6; margin: 0; font-weight: 300;">
+                            Optimisez vos échanges via Slack, Teams et soignez votre image pro.
+                        </p>
+                    </div>
+                    <div style="margin-top: 35px; font-weight: 800; color: var(--accent, #2997ff); font-size: 1.25rem;">
+                        à partir de 150€ HT →
+                    </div>
+                </a>
+
+                <a href="formation2.html" class="premium-card">
+                    <div>
+                        <div class="badge" style="margin-bottom: 20px; display: inline-block;">1-2 Jours</div>
+                        <h3 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.5px;">Outils Numériques</h3>
+                        <p class="text-dim" style="font-size: 1.1rem; line-height: 1.6; margin: 0; font-weight: 300;">
+                            Maîtrisez le Cloud et l'IA pour gagner en productivité au quotidien.
+                        </p>
+                    </div>
+                    <div style="margin-top: 35px; font-weight: 800; color: var(--accent, #2997ff); font-size: 1.25rem;">
+                        à partir de 120€ HT →
+                    </div>
+                </a>
+
+                <a href="formation3.html" class="premium-card">
+                    <div>
+                        <div class="badge" style="margin-bottom: 20px; display: inline-block;">1-2 Jours</div>
+                        <h3 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.5px;">Litiges Clients</h3>
+                        <p class="text-dim" style="font-size: 1.1rem; line-height: 1.6; margin: 0; font-weight: 300;">
+                            Désamorçage et médiation : l'art de gérer les clients difficiles.
+                        </p>
+                    </div>
+                    <div style="margin-top: 35px; font-weight: 800; color: var(--accent, #2997ff); font-size: 1.25rem;">
+                        à partir de 180€ HT →
+                    </div>
+                </a>
+
+                <a href="formation-reseaux.html" class="premium-card">
+                    <div>
+                        <div class="badge" style="margin-bottom: 20px; display: inline-block;">2 Jours</div>
+                        <h3 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.5px;">Réseaux Sociaux</h3>
+                        <p class="text-dim" style="font-size: 1.1rem; line-height: 1.6; margin: 0; font-weight: 300;">
+                            Acquérir de la visibilité et maîtriser sa communication sur les réseaux sociaux.
+                        </p>
+                    </div>
+                    <div style="margin-top: 35px; font-weight: 800; color: var(--accent, #2997ff); font-size: 1.25rem;">
+                        à partir de 160€ HT →
+                    </div>
+                </a>
+
+                <a href="accompagnement-ponctuel.html" class="premium-card">
+                    <div>
+                        <div class="badge" style="margin-bottom: 20px; display: inline-block;">À l'heure</div>
+                        <h3 style="font-size: 1.8rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.5px;">Conseil & Accompagnement</h3>
+                        <p class="text-dim" style="font-size: 1.1rem; line-height: 1.6; margin: 0; font-weight: 300;">
+                            Sessions ponctuelles pour conseils, accompagnement et résolution de problématiques.
+                        </p>
+                    </div>
+                    <div style="margin-top: 35px; font-weight: 800; color: var(--accent, #2997ff); font-size: 1.25rem;">
+                        30€ HT / heure →
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+  <div class="footer-bg"></div>
+
+  <div class="footer-wrapper">
+
+    <div class="footer-brand">
+      <h2 style="font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: -1px;">N.C.R Solutions</h2>
+      <p>
+        Formations professionnelles & solutions digitales pour entreprises modernes.
+        Nous aidons les structures à monter en compétence et en performance.
+      </p>
+
+      <div class="footer-pill">
+        Training partner • France
+      </div>
+    </div>
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Formations</h4>
+        <a href="formation1.html">Communication digitale</a>
+        <a href="formation2.html">Outils numériques</a>
+        <a href="formation3.html">Gestion des litiges</a>
+        <a href="formation-reseaux.html">Réseaux sociaux</a>
+        <a href="accompagnement-ponctuel.html">Accompagnement</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="cgu.html">CGU</a>
+        <a href="cgv.html">CGV</a>
+     </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 N.C.R Solutions — Tous droits réservés.</span>
+    <div class="contact-bar">
+
+  <a href="https://www.linkedin.com/in/nacer-hamadi-7b6476375"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="contact-item">
+
+    <svg viewBox="0 0 24 24" class="icon">
+      <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM8 7h4.8v2.3h.1c.7-1.3 2.5-2.7 5.1-2.7C23 6.6 24 9 24 12.6V24h-5v-9.8c0-2.3 0-5.2-3.2-5.2s-3.7 2.5-3.7 5V24H8V7z"/>
+    </svg>
+
+  </a>
+
+  <a href="tel:+33621972139" class="contact-item">
+
+    <svg viewBox="0 0 24 24" class="icon">
+      <path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/>
+    </svg>
+
+  </a>
+
+  <a href="mailto:contact@ncr-solutions.fr" class="contact-item">
+
+    <svg viewBox="0 0 24 24" class="icon">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+
+  </a>
+
+</div>
+    <span class="footer-meta">Designed with precision & simplicity</span>
+  </div>
+
+</footer>
+</body>
+</html>
