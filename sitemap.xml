@@ -1,53 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://www.ncr-solutions.fr/</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
+    <loc>https://ncr-solutions.fr/</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
   <url>
-    <loc>https://www.ncr-solutions.fr/index.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <loc>https://ncr-solutions.fr/formations.html</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
   <url>
-    <loc>https://www.ncr-solutions.fr/formations.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://ncr-solutions.fr/formation1.html</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
   <url>
-    <loc>https://www.ncr-solutions.fr/solutions-digitales.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://ncr-solutions.fr/formation2.html</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
   <url>
-    <loc>https://www.ncr-solutions.fr/impact.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://ncr-solutions.fr/formation3.html</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
   <url>
-    <loc>https://www.ncr-solutions.fr/a-propos.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <loc>https://ncr-solutions.fr/formation-reseaux.html</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
   <url>
-    <loc>https://www.ncr-solutions.fr/contact.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://ncr-solutions.fr/formation-sst.html</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
+  <url>
+    <loc>https://ncr-solutions.fr/accompagnement-ponctuel.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ncr-solutions.fr/solutions-digitales.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ncr-solutions.fr/creation-site-internet.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ncr-solutions.fr/community-management.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ncr-solutions.fr/assistance-informatique.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ncr-solutions.fr/impact.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ncr-solutions.fr/a-propos.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ncr-solutions.fr/faq.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ncr-solutions.fr/contact.html</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
 </urlset>
